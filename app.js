@@ -124,17 +124,11 @@
     d2El.textContent = fmt(res.D2);
 
     const block =
-`${title}
-
-N0 = ${fmt(res.N0)}
-N1 = ${fmt(res.N1)}
-N2 = ${fmt(res.N2)}
-D1 = ${fmt(res.D1)}
-D2 = ${fmt(res.D2)}
-
-Difference equation:
-y_k = N0*u_k + N1*u_{k-1} + N2*u_{k-2} - D1*y_{k-1} - D2*y_{k-2}
-`;
+`N0 = ${fmt(res.N0)},
+N1 = ${fmt(res.N1)},
+N2 = ${fmt(res.N2)},
+D1 = ${fmt(res.D1)},
+D2 = ${fmt(res.D2)}`;
     outTextEl.textContent = block;
     copyBtn.disabled = false;
   }
